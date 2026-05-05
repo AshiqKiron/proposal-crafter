@@ -1,0 +1,156 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "proposal-crafter/container",
+	"title": "Container",
+	"category": "proposal-crafter",
+	"description": "Create container layout",
+	"keywords": [ "container", "proposal", "columns", "layout", "section" ],
+	"textdomain": "proposal-crafter",
+	"attributes": {
+		"uniqueId": {
+			"type": "string",
+			"default": ""
+		},
+		"css": {
+			"type": "string",
+			"default": ""
+		},
+		"display": {
+			"type": "string",
+			"default": "block"
+		},
+		"displayTablet": {
+			"type": "string"
+		},
+		"displayMobile": {
+			"type": "string"
+		},
+		"flexDirection": {
+			"type": "string",
+			"default": "row"
+		},
+		"flexDirectionTablet": {
+			"type": "string"
+		},
+		"flexDirectionMobile": {
+			"type": "string"
+		},
+		"alignItems": {
+			"type": "string",
+			"default": "center"
+		},
+		"alignItemsTablet": {
+			"type": "string"
+		},
+		"alignItemsMobile": {
+			"type": "string"
+		},
+		"justifyContent": {
+			"type": "string",
+			"default": "space-between"
+		},
+		"justifyContentTablet": {
+			"type": "string"
+		},
+		"justifyContentMobile": {
+			"type": "string"
+		},
+		"borderStyle": {
+			"type": "string",
+			"default": "none"
+		},
+		"borderColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"borderWidth": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px",
+				"left": "0px"
+			}
+		},
+		"borderWidthTablet": {
+			"type": "object"
+		},
+		"borderWidthMobile": {
+			"type": "object"
+		},
+		"maxWidth": {
+			"type": "object",
+			"default": {
+				"type": "box",
+				"value": "1024px"
+			}
+		},
+		"maxWidthTablet": {
+			"type": "object"
+		},
+		"maxWidthMobile": {
+			"type": "object"
+		},
+		"alignment": {
+			"type": "string",
+			"default": "center"
+		},
+		"alignmentTablet": {
+			"type": "string"
+		},
+		"alignmentMobile": {
+			"type": "string"
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"type": "color",
+				"repeat": "no-repeat",
+				"size": "cover",
+				"value": ""
+			}
+		},
+		"backgroundOverlay": {
+			"type": "string",
+			"default": ""
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"top": "5px",
+				"right": "5px",
+				"bottom": "5px",
+				"left": "5px"
+			}
+		},
+		"paddingTablet": {
+			"type": "object"
+		},
+		"paddingMobile": {
+			"type": "object"
+		},
+		"margin": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px",
+				"left": "0px"
+			}
+		},
+		"marginTablet": {
+			"type": "object"
+		},
+		"marginMobile": {
+			"type": "object"
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": false
+	},
+	"style": [ "file:style.css" ],
+	"editorStyle": [ "file:editor.css" ]
+}

@@ -1,0 +1,137 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "proposal-crafter/list",
+	"title": "List",
+	"category": "proposal-crafter",
+	"description": "Create a list for your proposal",
+	"keywords": [ "text", "proposal", "list" ],
+	"textdomain": "proposal-crafter",
+	"attributes": {
+		"uniqueId": {
+			"type": "string",
+			"default": ""
+		},
+		"css": {
+			"type": "string",
+			"default": ""
+		},
+		"borderStyle": {
+			"type": "string",
+			"default": "none"
+		},
+		"borderColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"borderWidth": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px",
+				"left": "0px"
+			}
+		},
+		"borderWidthTablet": {
+			"type": "object"
+		},
+		"borderWidthMobile": {
+			"type": "object"
+		},
+		"content": {
+			"type": "array",
+			"source": "query",
+			"selector": "li",
+			"query": {
+				"li": {
+					"type": "string",
+					"source": "html"
+				}
+			},
+			"default": []
+		},
+		"htmlTag": {
+			"type": "string",
+			"default": "ul"
+		},
+		"alignment": {
+			"type": "string",
+			"default": "left"
+		},
+		"alignmentTablet": {
+			"type": "string"
+		},
+		"alignmentMobile": {
+			"type": "string"
+		},
+		"fontSize": {
+			"type": "number",
+			"default": 14
+		},
+		"fontSizeTablet": {
+			"type": "number"
+		},
+		"fontSizeMobile": {
+			"type": "number"
+		},
+		"fontWeight": {
+			"type": "string",
+			"default": "400"
+		},
+		"fontFamily": {
+			"type": "string",
+			"default": ""
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"type": "color",
+				"repeat": "no-repeat",
+				"size": "cover",
+				"value": ""
+			}
+		},
+		"color": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px",
+				"left": "0px"
+			}
+		},
+		"paddingTablet": {
+			"type": "object"
+		},
+		"paddingMobile": {
+			"type": "object"
+		},
+		"margin": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px",
+				"left": "0px"
+			}
+		},
+		"marginTablet": {
+			"type": "object"
+		},
+		"marginMobile": {
+			"type": "object"
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": false
+	},
+	"style": [ "file:style.css" ],
+	"editorStyle": [ "file:editor.css" ]
+}

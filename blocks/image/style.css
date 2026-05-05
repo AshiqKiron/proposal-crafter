@@ -1,0 +1,13 @@
+.wp-block-proposal-crafter-image .pc-image {
+    display: block;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.wp-block-proposal-crafter-image {
+    z-index: 10;
+}
+
+.wp-block-proposal-crafter-image:not(.wp-block) {
+    position: relative;
+}
