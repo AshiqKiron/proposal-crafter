@@ -1,0 +1,27 @@
+.wp-block-proposal-crafter-pricing {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.wp-block-proposal-crafter-pricing table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 400px;
+}
+
+.wp-block-proposal-crafter-pricing table th {
+    border: 0 !important;
+}
+
+.wp-block-proposal-crafter-pricing table td {
+    border: 0px;
+}
+
+.wp-block-proposal-crafter-pricing table td {
+    background-color: transparent !important;
+}
+
+.wp-block-proposal-crafter-pricing table tbody tr td {
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+}

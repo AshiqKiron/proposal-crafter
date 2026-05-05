@@ -1,0 +1,5 @@
+@import url('./style.css');
+
+.wp-block-proposal-crafter-list {
+    max-width: 100% !important;
+}
